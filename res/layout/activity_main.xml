@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.universityofroad.MainActivity" >
+    <Button
+        android:id="@+id/StudentNeedKnow"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.5"
+        android:background="@drawable/button_green_be_pink"
+        android:textSize="32sp"
+        android:text="新生须知" />
+
+    <Button
+        android:id="@+id/WaittingDevelop"
+        android:layout_width="0dp"
+        android:layout_weight="0.5"
+        android:layout_height="fill_parent"
+        android:background="@drawable/button_orange_be_blue"
+        android:textSize="32sp"
+        android:text="尽请期待" />
+
+</LinearLayout>
