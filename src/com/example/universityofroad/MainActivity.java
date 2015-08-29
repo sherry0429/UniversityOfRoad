@@ -38,8 +38,9 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				GoNext = new Intent(MainActivity.this,UnverSityRoad.class);
-				startActivity(GoNext);
+				Toast.makeText(MainActivity.this, "我们会尽快上线这块功能!", Toast.LENGTH_LONG).show();
+//				GoNext = new Intent(MainActivity.this,UnverSityRoad.class);
+//				startActivity(GoNext);
 			}
 		});
     }
