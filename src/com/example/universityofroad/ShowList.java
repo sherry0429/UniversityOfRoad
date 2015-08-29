@@ -63,6 +63,26 @@ public class ShowList extends Activity {
 			list.add(item);
 			item = new ListItem("我不想游泳啊！", R.drawable.ic_launcher, "swimming");
 			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
+			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
+			list.add(item);
 			break;
 		case STUDENT_BOOK:
 			break;
