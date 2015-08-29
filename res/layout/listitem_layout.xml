@@ -9,7 +9,7 @@
         android:id="@+id/imageView1"
         android:layout_width="0dp"
         android:layout_weight="0.2"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_launcher" />
 
@@ -17,10 +17,9 @@
         android:id="@+id/textView1"
         android:layout_weight="0.8"
         android:layout_width="0dp"
-        android:layout_height="100dp"
-        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
         android:background="@android:color/transparent"
-        android:textColor="@color/black"
         android:text="TextView" />
 
 </LinearLayout>

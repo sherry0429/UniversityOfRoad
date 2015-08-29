@@ -22,7 +22,6 @@ public class ReadText extends Activity {
 	private String FileName;
 	private String book;
 	private TextView text;
-	private InputStream stream;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -30,12 +29,6 @@ public class ReadText extends Activity {
 		InitStream();
 		text = (TextView) findViewById(R.id.book);
 		text.setText(book);
-	}
-	
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
 	}
 
 	@Override
@@ -59,7 +52,7 @@ public class ReadText extends Activity {
 	
 	public void InitStream(){
 		GetFileNameFromListItem();
-		stream = LoadFile(FileName);
+		InputStream stream = LoadFile(FileName);
 		if(stream!=null)
 			book = getString(stream);
 		else
