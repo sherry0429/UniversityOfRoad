@@ -1,7 +1,6 @@
 package com.example.universityofroad;
 
 
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
@@ -117,8 +116,9 @@ public class StudentNeedKnow extends Activity {
 				case R.id.Eatbool:
 //					v.setBackgroundResource(R.color.Cantsee);
 					next = new Intent(StudentNeedKnow.this,
-							ShowList.class);
-					next.putExtra("LoadWay", 2);
+							Sc_ShortCutNote.class);
+//					next.putExtra("LoadWay", 2);
+					
 					startActivity(next);
 					break;
 				case R.id.where:
