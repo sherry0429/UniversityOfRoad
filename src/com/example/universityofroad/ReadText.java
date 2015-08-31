@@ -12,6 +12,8 @@ import javax.security.auth.login.LoginException;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -30,6 +32,8 @@ public class ReadText extends Activity {
 		text = (TextView) findViewById(R.id.book);
 		text.setText(book);
 	}
+	
+	
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -85,12 +89,18 @@ public class ReadText extends Activity {
 		FileName = intent.getStringExtra("Name");
 	}
 	
+	
+//	加入文件需要更改的地方
 	private InputStream LoadFile(String str){
 		InputStream stream = null;
 		if(str.equals("swimming")){
 			stream = getResources().openRawResource(R.raw.swimming);
 		}else if(str.equals("swustcard")){
 			stream = getResources().openRawResource(R.raw.swustcard);
+		}else if(str.equals("qingjia")){
+			stream = getResources().openRawResource(R.raw.qingjia);
+		}else if(str.equals("jiangxuejin")){
+			stream = getResources().openRawResource(R.raw.jiangxuejin);
 		}else if(str.equals("biye")){
 			stream = getResources().openRawResource(R.raw.biye);
 		}

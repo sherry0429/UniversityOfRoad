@@ -53,11 +53,11 @@ public class ViewPagerPort extends Activity implements OnTouchListener{
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_view_pager_port);
 //		如果不是第一次启动应用 就不播放欢迎界面了
-		if(CheckStartTimes()){
-			Intent jumpToMain = new Intent(ViewPagerPort.this,MainActivity.class);
-			startActivity(jumpToMain);
-			this.finish();
-		}
+//		if(CheckStartTimes()){
+//			Intent jumpToMain = new Intent(ViewPagerPort.this,MainActivity.class);
+//			startActivity(jumpToMain);
+//			this.finish();
+//		}
 		viewPager = (ViewPager) findViewById(R.id.viewpager);
 		LayoutInflater inflater = getLayoutInflater();
 		view1 = inflater.inflate(R.layout.port_1, null);

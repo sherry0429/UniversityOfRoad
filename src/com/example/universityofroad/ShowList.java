@@ -51,6 +51,7 @@ public class ShowList extends Activity {
 
 	}
 
+//	加入文件需要更改的地方
 	public void InitListItem(){
 		Intent intent = getIntent();
 		CurrentWay = intent.getIntExtra("LoadWay", 0);
@@ -59,9 +60,13 @@ public class ShowList extends Activity {
 		case TIPS:
 			item = new ListItem("校园卡，看过来~", R.drawable.ic_launcher, "swustcard");
 			list.add(item);
-			item = new ListItem("学位证和毕业证的恩怨情仇", R.drawable.ic_launcher, "biye");
+			item = new ListItem("如何机智的请假", R.drawable.ic_launcher, "qingjia");
 			list.add(item);
 			item = new ListItem("我不想游泳啊！", R.drawable.ic_launcher, "swimming");
+			list.add(item);
+			item = new ListItem("怎样获取具有高逼格的奖学金", R.drawable.ic_launcher, "jiangxuejin");
+			list.add(item);
+			item = new ListItem("怎么样才算毕业", R.drawable.ic_launcher, "biye");
 			list.add(item);
 			break;
 		case STUDENT_BOOK:
